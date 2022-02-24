@@ -13,6 +13,8 @@ import EvenOrOdd from '../conditional/EvenOrOdd'
 import UserInfo from '../conditional/UserInfo'
 import DirectDad from '../comunication/DirectDad'
 import IndirectDad from '../comunication/IndirectDad'
+import Input from '../form/Input'
+import Counter from '../counter/Counter'
 
 export default _ =>
     <div className='App'>
@@ -20,7 +22,23 @@ export default _ =>
 
         <div className='Cards'>
 
-        <Card
+            <Card
+                title="#12 Contador"
+                color="orange"
+            >
+                <Counter 
+                    number={0}
+                />
+            </Card>
+
+            <Card
+                title="#11 Componente controlado"
+                color="lightgreen"
+            >
+                <Input />
+            </Card>
+
+            <Card
                 title="#10 Comunicação inireta"
                 color="lightcyan"
             >
