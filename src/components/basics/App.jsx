@@ -11,6 +11,8 @@ import StudentList from '../repetition/StudentList'
 import ProductList from '../repetition/ProductList'
 import EvenOrOdd from '../conditional/EvenOrOdd'
 import UserInfo from '../conditional/UserInfo'
+import DirectDad from '../comunication/DirectDad'
+import IndirectDad from '../comunication/IndirectDad'
 
 export default _ =>
     <div className='App'>
@@ -18,13 +20,27 @@ export default _ =>
 
         <div className='Cards'>
 
+        <Card
+                title="#10 Comunicação inireta"
+                color="lightcyan"
+            >
+                <IndirectDad />
+            </Card>
+
+            <Card
+                title="#09 Comunicação Direta"
+                color="cyan"
+            >
+                <DirectDad />
+            </Card>
+
             <Card
                 title="#08 Renderização condicional"
                 color="lightblue"
             >
                 <EvenOrOdd number={11}></EvenOrOdd>
-                <UserInfo user={{name: ""}}></UserInfo>
-                <UserInfo user={{name: "Hudson"}}></UserInfo>
+                <UserInfo user={{ name: "" }}></UserInfo>
+                <UserInfo user={{ name: "Hudson" }}></UserInfo>
             </Card>
 
             <Card
