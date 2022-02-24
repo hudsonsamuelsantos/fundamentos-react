@@ -1,0 +1,16 @@
+.ProductTable table{
+    width: 100%;
+}
+
+.ProductTable th {
+    background-color: purple;
+    color: #fff;
+}
+
+.ProductTable .light {
+    background-color: #ddd;
+}
+
+.ProductTable .dark {
+    background-color: #ccc;
+}
