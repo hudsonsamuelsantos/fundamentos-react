@@ -15,6 +15,7 @@ import DirectDad from '../comunication/DirectDad'
 import IndirectDad from '../comunication/IndirectDad'
 import Input from '../form/Input'
 import Counter from '../counter/Counter'
+import Mega from '../mega/Mega'
 
 export default _ =>
     <div className='App'>
@@ -23,10 +24,17 @@ export default _ =>
         <div className='Cards'>
 
             <Card
+                title="#13 Mega Sena"
+                color="darkblue"
+            >
+                <Mega />
+            </Card>
+
+            <Card
                 title="#12 Contador"
                 color="orange"
             >
-                <Counter 
+                <Counter
                     number={0}
                 />
             </Card>
@@ -39,7 +47,7 @@ export default _ =>
             </Card>
 
             <Card
-                title="#10 Comunicação inireta"
+                title="#10 Comunicação indireta"
                 color="lightcyan"
             >
                 <IndirectDad />
